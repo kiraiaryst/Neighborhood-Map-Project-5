@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>CHARGING STATION LOCATIONS</h1>
+    </div>
+    <div class="location-search">
+        <form id="searchbox" name="searchbox">
+            <input type="search" class="form-control" placeholder="Search..." data-bind="value: filter, valueUpdate: 'keyup'" id="search" autocomplete="off">
+        </form>
+    </div>
+    <div class="sidebar">
+        <div class="col-sm-3">
+
+            <ul data-bind="foreach: filteredItems">
+                <li>
+                    <button class="btn btn-primary btn-sm" data-bind="text: $data.name, click: $root.select"></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </form>
+    <div id="map"></div>
+    <script src="js/libs/knockout-3.4.0.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfmQSN7tMVh-OcGODB4xgNuPxyAlmGx5I&callback=startApp" async defer></script>
+    <script src="js/libs/jquery.min.js"></script>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
