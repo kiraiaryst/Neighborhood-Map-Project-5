@@ -63,7 +63,6 @@ var locations = [{
 var map;
 var infowindow;
 var marker;
-var userInput = (" ");
 
 //Setting Knockout observables for data
 var Station = function(data) {
@@ -110,7 +109,7 @@ function viewModel() {
         console.log(infowindow.setContent);
     };
 
-    //List and marker filter function using the search bar with userinput.
+    //List and marker filter function
     this.filteredItems = ko.computed(function() {
         var listFilter = self.filter().toLowerCase();
         return ko.utils.arrayFilter(self.stationList(), function(item) {
