@@ -187,12 +187,11 @@ function viewModel() {
         Wiki(station);
     });
 
-    function googleError() {
-        alert("Sorry, Google map failed to load...");
-    }
-
 };
-
+function loadError() {
+        alert("Sorry, Google map failed to load...");
+    };
+    
 //Application callback
 function startApp() {
     ko.applyBindings(new viewModel());
