@@ -4,11 +4,13 @@ body {
     margin: 0;
     padding: 0;
 }
+
 #map {
-    height: 500px;
+    height: 100%;
     width: 75%;
     margin-top: 15px;
 }
+
 .sidebar {
     position: relative;
     float: left;
@@ -24,10 +26,12 @@ body {
 h1 {
     text-align: center;
 }
+
 .title {
     text-align: center;
     color: #73C6B6;
 }
+
 .col-sm-3 {} #search {
     width: 100%;
     background-image: -webkit-linear-gradient(top, rgb(0, 121, 165) 0%, rgb(0, 101, 138) 100%);
@@ -35,17 +39,20 @@ h1 {
     border-bottom: 1px solid #666;
     color: white;
 }
+
 .btn {
     font-size: 14px;
     text-decoration: none;
     border: 1px solid;
     margin-bottom: 10px;
 }
+
 .btn-primary {
     background-color: #73C6B6;
     border-color: #A2D9CE;
     padding-top: 5px;
 }
+
 .location-search {
     width: 100%;
     background-image: -webkit-linear-gradient(top, rgb(0, 121, 165) 0%, rgb(0, 101, 138) 100%);
