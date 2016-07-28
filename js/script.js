@@ -165,7 +165,7 @@ function viewModel() {
             var wikiUrl = 'http://en.wikipedia.org/w/api.php?action=opensearch&search=' + locName + '&limit=1&format=json&callback=wikiCallback';
             var wikiRequestTimeout = setTimeout(function() {
                 alert("Unfortunately, Wikipedia is unavailable. Please try again later.");
-            }, 5000); // Error handler if wikipedia data can't be obtained
+            }, 2000); // Error handler if wikipedia data can't be obtained
 
 
             //AJAX request for Wikipedia API information used in infowindows
